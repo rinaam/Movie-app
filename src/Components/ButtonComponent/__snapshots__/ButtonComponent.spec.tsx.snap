@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonComponent should render ButtonComponent 1`] = `
+<button
+  className="btn btn-primary"
+  type="button"
+>
+  Roll
+</button>
+`;

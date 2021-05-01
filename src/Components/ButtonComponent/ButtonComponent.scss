@@ -1,0 +1,42 @@
+@use "sass:map";
+@import "../../Styles/variables.scss";
+@import "../../Styles/breakpoints.scss";
+
+.btn {
+  font-weight: map.get($font-weight, "s");
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: map.get($spacing, "s");
+  outline: none;
+  &-primary {
+    color: $white;
+    height: 35px;
+    background-color: $black;
+  }
+  &-round {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: $white-smoke;
+    margin: map.get($spacing, "s");
+  }
+  &-floating {
+    @extend .btn-round;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: map.get($spacing, "m");
+    color: $white;
+    background-color: $black;
+    font-size: map.get($font-size, "m");
+    box-shadow: map.get($box-shadow, "primary");
+    @include breakpoint(smallDevices) {
+      margin: map.get($spacing, "xl");
+    }
+  }
+  &-close {
+    background-color: $white;
+  }
+}
