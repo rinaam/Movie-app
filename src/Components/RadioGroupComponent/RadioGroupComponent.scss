@@ -1,0 +1,23 @@
+@use "sass:map";
+@import "../../Styles/variables.scss";
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  &-title {
+    margin: map.get($spacing, "m") 0px;
+    font: {
+      size: map.get($font-size, "m");
+      weight: map.get($font-weight, "medium");
+    }
+  }
+  &-option {
+    margin: map.get($spacing, "s") 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    &-btn {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroupComponent should render RadioGroupComponent 1`] = `
+<div
+  className="radio"
+>
+  <p
+    className="radio-title"
+  />
+  <label
+    className="radio-option"
+  >
+    option1
+    <input
+      className="radio-option-btn"
+      name="fakeName"
+      onChange={[Function]}
+      type="radio"
+      value="option1"
+    />
+  </label>
+  <label
+    className="radio-option"
+  >
+    option2
+    <input
+      className="radio-option-btn"
+      name="fakeName"
+      onChange={[Function]}
+      type="radio"
+      value="option2"
+    />
+  </label>
+  <label
+    className="radio-option"
+  >
+    option3
+    <input
+      className="radio-option-btn"
+      name="fakeName"
+      onChange={[Function]}
+      type="radio"
+      value="option3"
+    />
+  </label>
+</div>
+`;

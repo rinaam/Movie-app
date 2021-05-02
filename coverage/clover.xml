@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1619952028547" clover="3.2.0">
-  <project timestamp="1619952028547" name="All files">
-    <metrics statements="78" coveredstatements="78" conditionals="19" coveredconditionals="19" methods="13" coveredmethods="12" elements="110" coveredelements="109" complexity="0" loc="78" ncloc="78" packages="9" files="11" classes="11"/>
+<coverage generated="1619952287313" clover="3.2.0">
+  <project timestamp="1619952287313" name="All files">
+    <metrics statements="89" coveredstatements="89" conditionals="19" coveredconditionals="19" methods="16" coveredmethods="15" elements="124" coveredelements="123" complexity="0" loc="89" ncloc="89" packages="10" files="12" classes="12"/>
     <package name="src">
       <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.tsx" path="/Users/marina/work/Movie-app/src/App.tsx">
@@ -104,6 +104,23 @@
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Components.RadioGroupComponent">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="RadioGroupComponent.tsx" path="/Users/marina/work/Movie-app/src/Components/RadioGroupComponent/RadioGroupComponent.tsx">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.Containers.MoviesList">
