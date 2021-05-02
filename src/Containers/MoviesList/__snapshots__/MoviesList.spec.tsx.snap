@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultsContainer should render ResultsContainer 1`] = `
+<div
+  className="movie-list"
+>
+  <div
+    className="card"
+    onClick={[Function]}
+  >
+    <div
+      className="card-header"
+    >
+      <div
+        className="card-header-image"
+        style={
+          Object {
+            "backgroundImage": "url(\\"fake-base/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
+          }
+        }
+      />
+      <p
+        className="card-header-grade"
+      >
+        8.3
+      </p>
+    </div>
+    <div
+      className="card-data"
+    >
+      <div
+        className="card-data-title"
+      >
+        <p>
+          Avengers: Infinity War
+        </p>
+        <p>
+          (
+          2018
+          )
+        </p>
+      </div>
+      <p>
+         
+        en
+      </p>
+    </div>
+  </div>
+  <div
+    className="card"
+    onClick={[Function]}
+  >
+    <div
+      className="card-header"
+    >
+      <div
+        className="card-header-image"
+        style={
+          Object {
+            "backgroundImage": "url(\\"fake-base/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
+          }
+        }
+      />
+      <p
+        className="card-header-grade"
+      >
+        8.3
+      </p>
+    </div>
+    <div
+      className="card-data"
+    >
+      <div
+        className="card-data-title"
+      >
+        <p>
+          Avengers: Infinity War
+        </p>
+        <p>
+          (
+          2018
+          )
+        </p>
+      </div>
+      <p>
+         
+        en
+      </p>
+    </div>
+  </div>
+  <div
+    className="card"
+    onClick={[Function]}
+  >
+    <div
+      className="card-header"
+    >
+      <div
+        className="card-header-image"
+        style={
+          Object {
+            "backgroundImage": "url(\\"fake-base/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
+          }
+        }
+      />
+      <p
+        className="card-header-grade"
+      >
+        8.3
+      </p>
+    </div>
+    <div
+      className="card-data"
+    >
+      <div
+        className="card-data-title"
+      >
+        <p>
+          Avengers: Infinity War
+        </p>
+        <p>
+          (
+          Unknown Date
+          )
+        </p>
+      </div>
+      <p>
+         
+        en
+      </p>
+    </div>
+  </div>
+</div>
+`;

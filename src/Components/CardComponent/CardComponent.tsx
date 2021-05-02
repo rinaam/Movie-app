@@ -10,6 +10,7 @@ export interface ICardProps {
   content: string;
   titleSufix: string | number;
   onClick: () => void;
+  imageAsBackground?: boolean;
 }
 
 const CardComponent: React.FC<ICardProps> = ({
@@ -18,6 +19,7 @@ const CardComponent: React.FC<ICardProps> = ({
   title,
   content,
   titleSufix,
+  imageAsBackground,
   onClick,
 }) => (
   <div className="card" onClick={onClick}>
@@ -25,7 +27,7 @@ const CardComponent: React.FC<ICardProps> = ({
       <ImageComponent
         alt={title}
         imgUrl={imgUrl}
-        useBackground
+        useBackground={imageAsBackground}
         className="card-header-image"
       />
 
