@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1619950214295" clover="3.2.0">
-  <project timestamp="1619950214295" name="All files">
-    <metrics statements="62" coveredstatements="62" conditionals="17" coveredconditionals="17" methods="11" coveredmethods="10" elements="90" coveredelements="89" complexity="0" loc="62" ncloc="62" packages="7" files="9" classes="9"/>
+<coverage generated="1619950921495" clover="3.2.0">
+  <project timestamp="1619950921496" name="All files">
+    <metrics statements="63" coveredstatements="63" conditionals="17" coveredconditionals="17" methods="11" coveredmethods="10" elements="91" coveredelements="90" complexity="0" loc="63" ncloc="63" packages="7" files="9" classes="9"/>
     <package name="src">
       <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.tsx" path="/Users/marina/work/Movie-app/src/App.tsx">
@@ -36,21 +36,22 @@
       </file>
     </package>
     <package name="src.Components.CardComponent">
-      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="CardComponent.tsx" path="/Users/marina/work/Movie-app/src/Components/CardComponent/CardComponent.tsx">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
         <line num="19" count="4" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
         <line num="21" count="4" type="stmt"/>
         <line num="22" count="4" type="stmt"/>
-        <line num="45" count="2" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.ImageComponent">
@@ -91,10 +92,10 @@
         <line num="8" count="1" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="40" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="41" count="3" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.Containers.MoviesList.Utils">

@@ -15,7 +15,7 @@ exports[`ResultsContainer should render ResultsContainer 1`] = `
         className="card-header-image"
         style={
           Object {
-            "backgroundImage": "url(\\"fake-base/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
+            "backgroundImage": "url(\\"fake-base/w342/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
           }
         }
       />
@@ -42,7 +42,7 @@ exports[`ResultsContainer should render ResultsContainer 1`] = `
       </div>
       <p>
          
-        en
+        Language: en
       </p>
     </div>
   </div>
@@ -57,7 +57,7 @@ exports[`ResultsContainer should render ResultsContainer 1`] = `
         className="card-header-image"
         style={
           Object {
-            "backgroundImage": "url(\\"fake-base/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
+            "backgroundImage": "url(\\"fake-base/w342/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
           }
         }
       />
@@ -84,7 +84,7 @@ exports[`ResultsContainer should render ResultsContainer 1`] = `
       </div>
       <p>
          
-        en
+        Language: en
       </p>
     </div>
   </div>
@@ -99,7 +99,7 @@ exports[`ResultsContainer should render ResultsContainer 1`] = `
         className="card-header-image"
         style={
           Object {
-            "backgroundImage": "url(\\"fake-base/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
+            "backgroundImage": "url(\\"fake-base/w342/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg\\")",
           }
         }
       />
@@ -126,7 +126,7 @@ exports[`ResultsContainer should render ResultsContainer 1`] = `
       </div>
       <p>
          
-        en
+        Language: en
       </p>
     </div>
   </div>

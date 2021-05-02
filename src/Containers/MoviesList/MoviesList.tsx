@@ -33,7 +33,9 @@ export interface IMovieListProps {
 }
 
 const MoviesList: React.FC<IMovieListProps> = ({ items }) => {
-  const handleClick = () => {};
+  const handleClick = () => {
+    // do nothing for now
+  };
   return (
     <div className="movie-list">
       {items.map((item) => {

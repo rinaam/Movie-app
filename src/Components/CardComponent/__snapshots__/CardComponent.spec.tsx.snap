@@ -8,13 +8,10 @@ exports[`CardComponent should render CardComponent 1`] = `
   <div
     className="card-header"
   >
-    <div
+    <img
+      alt="Movie Title"
       className="card-header-image"
-      style={
-        Object {
-          "backgroundImage": "url(\\"image\\")",
-        }
-      }
+      src="image"
     />
     <p
       className="card-header-grade"
