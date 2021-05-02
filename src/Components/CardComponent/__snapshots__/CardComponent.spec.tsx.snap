@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComponent should render CardComponent 1`] = `
+<div
+  className="card"
+  onClick={[Function]}
+>
+  <div
+    className="card-header"
+  >
+    <div
+      className="card-header-image"
+      style={
+        Object {
+          "backgroundImage": "url(\\"image\\")",
+        }
+      }
+    />
+    <p
+      className="card-header-grade"
+    >
+      5
+    </p>
+  </div>
+  <div
+    className="card-data"
+  >
+    <div
+      className="card-data-title"
+    >
+      <p>
+        Movie Title
+      </p>
+      <p>
+        (
+        2018
+        )
+      </p>
+    </div>
+    <p>
+       
+      Language: en
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,57 @@
+@use "sass:map";
+@import "../../Styles/variables.scss";
+@import "../../Styles/breakpoints.scss";
+
+.card {
+  box-shadow: map.get($box-shadow, "elevation");
+  border-radius: 4px;
+  width: 290px;
+  background-color: $white;
+  padding: map.get($spacing, "s");
+  margin: map.get($spacing, "xs");
+  display: inline-block;
+  cursor: pointer;
+  @include breakpoint(smallDevices) {
+    margin: map.get($spacing, "m");
+    width: 350px;
+  }
+  &-header {
+    position: relative;
+    height: 500px;
+    &-grade {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background-color: $white-smoke;
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+
+      background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+      }
+    }
+  }
+  &-data {
+    line-height: 1.5;
+    padding-top: map.get($spacing, "m");
+    &-title {
+      display: flex;
+      :first-child {
+        margin-right: map.get($spacing, "xs");
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

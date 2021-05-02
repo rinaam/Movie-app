@@ -1,8 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ImageComponent should accept classname 1`] = `
+<div
+  className="fakeClassname"
+  style={
+    Object {
+      "backgroundImage": "url(\\"fakeUrl\\")",
+    }
+  }
+/>
+`;
+
 exports[`ImageComponent should render ImageComponent 1`] = `
 <img
   alt="fakeAlt"
+  className=""
   src="fakeUrl"
+/>
+`;
+
+exports[`ImageComponent should render ImageComponent with a background 1`] = `
+<div
+  className=""
+  style={
+    Object {
+      "backgroundImage": "url(\\"fakeUrl\\")",
+    }
+  }
 />
 `;
