@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalComponent should render ModalComponent 1`] = `
+<div
+  className="modal"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="container-header"
+    >
+      <p>
+        Fake Title
+      </p>
+      <button
+        className="btn btn-close"
+        type="button"
+      >
+        <IconMock />
+      </button>
+    </div>
+    <div
+      className="container-content"
+    >
+      <p>
+        Hello World
+      </p>
+    </div>
+  </div>
+</div>
+`;
