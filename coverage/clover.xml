@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1619950921495" clover="3.2.0">
-  <project timestamp="1619950921496" name="All files">
-    <metrics statements="63" coveredstatements="63" conditionals="17" coveredconditionals="17" methods="11" coveredmethods="10" elements="91" coveredelements="90" complexity="0" loc="63" ncloc="63" packages="7" files="9" classes="9"/>
+<coverage generated="1619951441237" clover="3.2.0">
+  <project timestamp="1619951441237" name="All files">
+    <metrics statements="67" coveredstatements="67" conditionals="17" coveredconditionals="17" methods="12" coveredmethods="11" elements="96" coveredelements="95" complexity="0" loc="67" ncloc="67" packages="8" files="10" classes="10"/>
     <package name="src">
       <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.tsx" path="/Users/marina/work/Movie-app/src/App.tsx">
@@ -54,6 +54,16 @@
         <line num="47" count="2" type="stmt"/>
       </file>
     </package>
+    <package name="src.Components.ContainerComponent">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ContainerComponent.tsx" path="/Users/marina/work/Movie-app/src/Components/ContainerComponent/ContainerComponent.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="src.Components.ImageComponent">
       <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <file name="ImageComponent.tsx" path="/Users/marina/work/Movie-app/src/Components/ImageComponent/ImageComponent.tsx">
@@ -90,7 +100,7 @@
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="42" count="3" type="cond" truecount="2" falsecount="0"/>
