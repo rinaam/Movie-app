@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/Components/ImageCardComponent/ImageCardComponent.tsx</title>
+    <title>Code coverage report for src/Components/BasicListComponent/BasicListComponent.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/Components/ImageCardComponent</a> ImageCardComponent.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/Components/BasicListComponent</a> BasicListComponent.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/9</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -83,8 +83,7 @@
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -94,13 +93,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -112,32 +110,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
-import "./ImageCardComponent.scss";
-import ImageComponet from "../ImageComponent/ImageComponent";
+import "./BasicListComponent.scss";
+import BasicListItemComponent from "../BasicListItemComponent/BasicListItemComponent";
 &nbsp;
-export interface IImageCardProps {
-  imageUrl: string;
-  description: string;
-  alt: string;
+export interface IBasicListProps {
+  list: TBasicListItem[];
 }
 &nbsp;
-const ImageCardComponent: React.FC&lt;IImageCardProps&gt; = ({
-  imageUrl,
-  description,
-  alt,
-}) =&gt; (
-  &lt;div className="image-card"&gt;
-    &lt;ImageComponet
-      imgUrl={imageUrl}
-      alt={alt}
-      className="image-card-img"
-      useBackground
-    /&gt;
+export type TBasicListItem = {
+  title: string;
+  sufix: string;
+};
 &nbsp;
-    &lt;p className="image-card-description"&gt;{description}&lt;/p&gt;
+const BasicListComponent: React.FC&lt;IBasicListProps&gt; = ({ list }) =&gt; (
+  &lt;div className="basic-list"&gt;
+    {list.map((item) =&gt; (
+      &lt;BasicListItemComponent
+        title={item.title}
+        sufix={item.sufix}
+        key={item.title}
+      /&gt;
+    ))}
   &lt;/div&gt;
 );
-export default ImageCardComponent;
+&nbsp;
+export default BasicListComponent;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

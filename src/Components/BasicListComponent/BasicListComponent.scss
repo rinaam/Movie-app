@@ -1,0 +1,10 @@
+@use "sass:map";
+@import "../../Styles/variables.scss";
+@import "../../Styles/breakpoints.scss";
+
+.basic-list {
+  line-height: 1.5;
+  @include breakpoint(smallDevices) {
+    margin: map.get($spacing, "l") 0px;
+  }
+}

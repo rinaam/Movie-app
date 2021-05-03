@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1620072678666" clover="3.2.0">
-  <project timestamp="1620072678666" name="All files">
-    <metrics statements="126" coveredstatements="126" conditionals="19" coveredconditionals="19" methods="23" coveredmethods="20" elements="168" coveredelements="165" complexity="0" loc="126" ncloc="126" packages="13" files="15" classes="15"/>
+<coverage generated="1620072859913" clover="3.2.0">
+  <project timestamp="1620072859913" name="All files">
+    <metrics statements="132" coveredstatements="132" conditionals="19" coveredconditionals="19" methods="25" coveredmethods="22" elements="176" coveredelements="173" complexity="0" loc="132" ncloc="132" packages="14" files="16" classes="16"/>
     <package name="src">
       <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.tsx" path="/Users/marina/work/Movie-app/src/App.tsx">
@@ -24,17 +24,29 @@
         <line num="8" count="4" type="stmt"/>
       </file>
     </package>
+    <package name="src.Components.BasicListComponent">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="BasicListComponent.tsx" path="/Users/marina/work/Movie-app/src/Components/BasicListComponent/BasicListComponent.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="src.Components.BasicListItemComponent">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="BasicListItemComponent.tsx" path="/Users/marina/work/Movie-app/src/Components/BasicListItemComponent/BasicListItemComponent.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.ButtonComponent">

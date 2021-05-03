@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicListComponent should render BasicListComponent 1`] = `
+<div
+  className="basic-list"
+>
+  <div
+    className="basic-list-item"
+  >
+    <p>
+      title
+    </p>
+    <p>
+      item
+    </p>
+  </div>
+</div>
+`;
