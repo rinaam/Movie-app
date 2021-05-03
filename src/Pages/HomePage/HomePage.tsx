@@ -48,7 +48,7 @@ type TGenre = {
 export const genresMock: IGenre = {
   genres: [
     {
-      id: 28,
+      id: 287,
       name: "Action",
     },
     {
@@ -58,10 +58,6 @@ export const genresMock: IGenre = {
     {
       id: 53,
       name: "Drama",
-    },
-    {
-      id: 18,
-      name: "SF",
     },
   ],
 };

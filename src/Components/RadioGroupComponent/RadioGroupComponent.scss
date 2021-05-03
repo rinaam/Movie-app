@@ -4,6 +4,8 @@
 .radio {
   display: flex;
   flex-direction: column;
+  max-height: 400px;
+  overflow: scroll;
   &-title {
     margin: map.get($spacing, "m") 0px;
     font: {

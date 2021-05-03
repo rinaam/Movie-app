@@ -1,20 +1,18 @@
-import React from 'react';
-import './ButtonComponent.scss';
+import React from "react";
+import "./ButtonComponent.scss";
 
 export interface IButtonProps {
-    variant: 'primary' | 'round' | 'floating' | 'close';
-    children: JSX.Element | string;
-    onClick: () => void;
+  variant: "primary" | "round" | "floating" | "close";
+  children: JSX.Element | string;
+  onClick: () => void;
 }
 
 const ButtonComponent: React.FC<IButtonProps> = ({
   variant,
   children,
+  onClick,
 }) => (
-  <button
-    type="button"
-    className={`btn btn-${variant}`}
-  >
+  <button type="button" className={`btn btn-${variant}`} onClick={onClick}>
     {children}
   </button>
 );
