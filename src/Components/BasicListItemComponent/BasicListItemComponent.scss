@@ -1,0 +1,11 @@
+@use "sass:map";
+@import "../../Styles/variables.scss";
+
+.basic-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  :first-child {
+    font-weight: map.get($font-weight, "bold");
+    margin-right: map.get($spacing, "xs");
+  }
+}
