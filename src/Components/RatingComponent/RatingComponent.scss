@@ -1,0 +1,17 @@
+@use "sass:map";
+@import "../../Styles/breakpoints.scss";
+@import "../../Styles/variables.scss";
+
+.rating {
+  margin: 24px 0px;
+  display: flex;
+  &-icon {
+    margin-right: map.get($spacing, "xs");
+    cursor: pointer;
+    color: $yellow;
+    font-size: map.get($font-size, "m");
+    @include breakpoint(smallDevices) {
+      font-size: map.get($font-size, "l");
+    }
+  }
+}

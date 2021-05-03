@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RatingComponent should render RatingComponent 1`] = `
+<div
+  className="rating"
+>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+  <div
+    className="rating-icon"
+    onClick={[Function]}
+  >
+    <IconMock />
+  </div>
+</div>
+`;

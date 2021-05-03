@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/Components/RadioGroupComponent/RadioGroupComponent.tsx</title>
+    <title>Code coverage report for src/Components/RatingComponent/RatingComponent.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/Components/RadioGroupComponent</a> RadioGroupComponent.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/Components/RatingComponent</a> RatingComponent.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -95,16 +95,11 @@
 <a name='L36'></a><a href='#L36'>36</a>
 <a name='L37'></a><a href='#L37'>37</a>
 <a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L39'></a><a href='#L39'>39</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -112,19 +107,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">30x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -134,46 +128,49 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
-import "./RadioGroupComponent.scss";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from "react";
+import "./RatingComponent.scss";
+import SolidStar from "../../Assets/Icons/SolidStarIcon.svg";
+import RegularStar from "../../Assets/Icons/RegularStarIcon.svg";
+import { ratingGrades } from "../../Constants";
 &nbsp;
-export interface IRadioGroupProps {
-  items: TItem[];
-  groupName: string;
-  title?: string;
-  onChange: (event: string) =&gt; void;
+export interface IRatingProps {
+  rating: number;
+  onClick: (event: number) =&gt; void;
 }
 &nbsp;
-export type TItem = {
-  name: string;
-  id: number;
+const RatingComponent: React.FC&lt;IRatingProps&gt; = ({ rating, onClick }) =&gt; {
+  const [selectedGrade, setSelectedGrade] = useState(rating);
+&nbsp;
+  const handleClick = (grade: number) =&gt; {
+    setSelectedGrade(grade);
+    onClick(grade);
+  };
+&nbsp;
+  return (
+    &lt;div className="rating"&gt;
+      {ratingGrades.map((grade) =&gt; {
+        const StarIcon = grade &lt;= selectedGrade ? SolidStar : RegularStar;
+        return (
+          &lt;div
+            onClick={() =&gt; handleClick(grade)}
+            className="rating-icon"
+            key={grade}
+          &gt;
+            &lt;StarIcon /&gt;
+          &lt;/div&gt;
+        );
+      })}
+    &lt;/div&gt;
+  );
 };
 &nbsp;
-const RadioGroupComponent: React.FC&lt;IRadioGroupProps&gt; = ({
-  items,
-  groupName,
-  title,
-  onChange,
-}) =&gt; (
-  &lt;div className="radio"&gt;
-    &lt;p className="radio-title"&gt;{title}&lt;/p&gt;
-    {items.map((item) =&gt; (
-      &lt;label className="radio-option" key={item.id}&gt;
-        {item.name}
-        &lt;input
-          type="radio"
-          name={groupName}
-          value={item.name}
-          onChange={() =&gt; onChange(item.name)}
-          className="radio-option-btn"
-        /&gt;
-      &lt;/label&gt;
-    ))}
-  &lt;/div&gt;
-);
-&nbsp;
-export default RadioGroupComponent;
+export default RatingComponent;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
