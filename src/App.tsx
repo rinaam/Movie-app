@@ -1,5 +1,15 @@
 import React from "react";
+import HomePage from "./Pages/HomePage/HomePage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const App: React.FC = () => <h1>Hello, world!</h1>;
+const App: React.FC = () => (
+  <Router>
+    <Switch>
+      <Route path="/" exact>
+        <HomePage />
+      </Route>
+    </Switch>
+  </Router>
+);
 
 export default App;
