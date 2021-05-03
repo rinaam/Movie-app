@@ -265,6 +265,7 @@ exports[`HomePage should open modal 1`] = `
   >
     <button
       className="btn btn-round"
+      onClick={[Function]}
       type="button"
     >
       Load
@@ -272,6 +273,7 @@ exports[`HomePage should open modal 1`] = `
   </div>
   <button
     className="btn btn-floating"
+    onClick={[Function]}
     type="button"
   >
     <IconMock />
@@ -290,6 +292,7 @@ exports[`HomePage should open modal 1`] = `
         </p>
         <button
           className="btn btn-close"
+          onClick={[Function]}
           type="button"
         >
           <IconMock />
@@ -345,21 +348,10 @@ exports[`HomePage should open modal 1`] = `
                 value="Drama"
               />
             </label>
-            <label
-              className="radio-option"
-            >
-              SF
-              <input
-                className="radio-option-btn"
-                name="Genre"
-                onChange={[Function]}
-                type="radio"
-                value="SF"
-              />
-            </label>
           </div>
           <button
             className="btn btn-primary"
+            onClick={[Function]}
             type="button"
           >
             Roll
@@ -636,6 +628,7 @@ exports[`HomePage should render HomePage 1`] = `
   >
     <button
       className="btn btn-round"
+      onClick={[Function]}
       type="button"
     >
       Load
@@ -643,6 +636,7 @@ exports[`HomePage should render HomePage 1`] = `
   </div>
   <button
     className="btn btn-floating"
+    onClick={[Function]}
     type="button"
   >
     <IconMock />

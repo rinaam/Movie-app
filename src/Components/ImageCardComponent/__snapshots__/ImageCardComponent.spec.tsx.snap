@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCardComponent should render ImageCardComponent 1`] = `
+<div
+  className="image-card"
+>
+  <div
+    className="image-card-img"
+    style={
+      Object {
+        "backgroundImage": "url(\\"test\\")",
+      }
+    }
+  />
+  <p
+    className="image-card-description"
+  >
+    test
+  </p>
+</div>
+`;

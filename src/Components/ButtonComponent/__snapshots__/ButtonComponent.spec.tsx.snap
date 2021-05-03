@@ -3,6 +3,7 @@
 exports[`ButtonComponent should render ButtonComponent 1`] = `
 <button
   className="btn btn-primary"
+  onClick={[MockFunction]}
   type="button"
 >
   Roll
