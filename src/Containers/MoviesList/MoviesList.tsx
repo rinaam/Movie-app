@@ -6,6 +6,7 @@ import { getMovieName } from "./Utils/getMovieName";
 import { getReleaseDate } from "./Utils/getReleaseDate";
 import { formatMoviePosterUrl } from "../../Components/ImageComponent/Utils/formatMoviePosterUrl";
 import { ImageSizes } from "../../Constants";
+import { useHistory } from "react-router-dom";
 
 export type TMovie = {
   adult?: boolean;
@@ -33,8 +34,10 @@ export interface IMovieListProps {
 }
 
 const MoviesList: React.FC<IMovieListProps> = ({ items }) => {
-  const handleClick = () => {
-    // do nothing for now
+  const history = useHistory();
+
+  const navigateToDetails = (id: number) => {
+    history.push(`/details/${id}`);
   };
   return (
     <div className="movie-list">
@@ -50,7 +53,7 @@ const MoviesList: React.FC<IMovieListProps> = ({ items }) => {
               size: ImageSizes.l,
               imageUrl: item.poster_path,
             })}
-            onClick={handleClick}
+            onClick={() => navigateToDetails(item.id)}
             key={item.id}
             titleSufix={getReleaseDate(releiseDate)}
           />

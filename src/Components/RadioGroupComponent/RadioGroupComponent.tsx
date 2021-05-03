@@ -5,7 +5,7 @@ export interface IRadioGroupProps {
   items: TItem[];
   groupName: string;
   title?: string;
-  onChange: (event: string) => void;
+  onChange: (event: number) => void;
 }
 
 export type TItem = {
@@ -28,7 +28,7 @@ const RadioGroupComponent: React.FC<IRadioGroupProps> = ({
           type="radio"
           name={groupName}
           value={item.name}
-          onChange={() => onChange(item.name)}
+          onChange={() => onChange(item.id)}
           className="radio-option-btn"
         />
       </label>

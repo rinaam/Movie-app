@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1620074039625" clover="3.2.0">
-  <project timestamp="1620074039625" name="All files">
-    <metrics statements="152" coveredstatements="152" conditionals="21" coveredconditionals="21" methods="30" coveredmethods="27" elements="203" coveredelements="200" complexity="0" loc="152" ncloc="152" packages="16" files="18" classes="18"/>
+<coverage generated="1620076390751" clover="3.2.0">
+  <project timestamp="1620076390751" name="All files">
+    <metrics statements="187" coveredstatements="168" conditionals="55" coveredconditionals="30" methods="40" coveredmethods="26" elements="282" coveredelements="224" complexity="0" loc="187" ncloc="187" packages="17" files="20" classes="20"/>
     <package name="src">
-      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="App.tsx" path="/Users/marina/work/Movie-app/src/App.tsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
       </file>
       <file name="Constants.ts" path="/Users/marina/work/Movie-app/src/Constants.ts">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="2" count="5" type="stmt"/>
         <line num="3" count="5" type="stmt"/>
@@ -23,6 +25,7 @@
         <line num="7" count="5" type="stmt"/>
         <line num="8" count="5" type="stmt"/>
         <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.BasicListComponent">
@@ -57,10 +60,10 @@
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
-        <line num="11" count="21" type="stmt"/>
-        <line num="12" count="21" type="stmt"/>
-        <line num="13" count="21" type="stmt"/>
-        <line num="14" count="21" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
       </file>
     </package>
@@ -72,14 +75,14 @@
         <line num="2" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="16" count="4" type="stmt"/>
-        <line num="17" count="46" type="stmt"/>
-        <line num="18" count="46" type="stmt"/>
-        <line num="19" count="46" type="stmt"/>
-        <line num="20" count="46" type="stmt"/>
-        <line num="21" count="46" type="stmt"/>
-        <line num="22" count="46" type="stmt"/>
-        <line num="23" count="46" type="stmt"/>
-        <line num="24" count="46" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
         <line num="47" count="4" type="stmt"/>
       </file>
     </package>
@@ -89,7 +92,7 @@
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
-        <line num="4" count="8" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
       </file>
     </package>
@@ -114,11 +117,11 @@
         <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="1" count="6" type="stmt"/>
         <line num="10" count="6" type="stmt"/>
-        <line num="11" count="50" type="stmt"/>
-        <line num="12" count="50" type="stmt"/>
-        <line num="13" count="50" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="50" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="50" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="8" type="stmt"/>
         <line num="27" count="6" type="stmt"/>
       </file>
     </package>
@@ -127,10 +130,10 @@
       <file name="formatMoviePosterUrl.ts" path="/Users/marina/work/Movie-app/src/Components/ImageComponent/Utils/formatMoviePosterUrl.ts">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="9" count="4" type="stmt"/>
-        <line num="10" count="47" type="stmt"/>
-        <line num="11" count="47" type="stmt"/>
-        <line num="12" count="47" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="47" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.Components.ModalComponent">
@@ -142,11 +145,11 @@
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="13" count="3" type="stmt"/>
-        <line num="14" count="8" type="stmt"/>
-        <line num="15" count="8" type="stmt"/>
-        <line num="16" count="8" type="stmt"/>
-        <line num="17" count="8" type="stmt"/>
-        <line num="18" count="8" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
         <line num="36" count="3" type="stmt"/>
       </file>
     </package>
@@ -157,12 +160,12 @@
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="16" count="3" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="24" count="12" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
       </file>
@@ -189,9 +192,9 @@
       </file>
     </package>
     <package name="src.Containers.MoviesList">
-      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+      <metrics statements="17" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="2"/>
       <file name="MoviesList.tsx" path="/Users/marina/work/Movie-app/src/Containers/MoviesList/MoviesList.tsx">
-        <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <metrics statements="17" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
@@ -199,12 +202,16 @@
         <line num="6" count="3" type="stmt"/>
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
-        <line num="35" count="8" type="stmt"/>
-        <line num="36" count="8" type="stmt"/>
-        <line num="39" count="8" type="stmt"/>
-        <line num="42" count="45" type="cond" truecount="2" falsecount="0"/>
-        <line num="43" count="45" type="stmt"/>
-        <line num="63" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="66" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.Containers.MoviesList.Utils">
@@ -212,14 +219,14 @@
       <file name="getMovieName.ts" path="/Users/marina/work/Movie-app/src/Containers/MoviesList/Utils/getMovieName.ts">
         <metrics statements="2" coveredstatements="2" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
-        <line num="4" count="49" type="cond" truecount="3" falsecount="0"/>
+        <line num="4" count="7" type="cond" truecount="3" falsecount="0"/>
       </file>
       <file name="getReleaseDate.ts" path="/Users/marina/work/Movie-app/src/Containers/MoviesList/Utils/getReleaseDate.ts">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
-        <line num="2" count="47" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="5" count="45" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.Pages.DetailsPage">
@@ -233,10 +240,11 @@
       </file>
     </package>
     <package name="src.Pages.HomePage">
-      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
+      <metrics statements="36" coveredstatements="24" conditionals="32" coveredconditionals="7" methods="11" coveredmethods="1"/>
       <file name="HomePage.tsx" path="/Users/marina/work/Movie-app/src/Pages/HomePage/HomePage.tsx">
-        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
+        <metrics statements="36" coveredstatements="24" conditionals="32" coveredconditionals="7" methods="11" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
@@ -244,16 +252,52 @@
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
-        <line num="65" count="2" type="stmt"/>
-        <line num="174" count="2" type="stmt"/>
-        <line num="175" count="7" type="stmt"/>
-        <line num="177" count="7" type="stmt"/>
-        <line num="181" count="7" type="stmt"/>
-        <line num="185" count="7" type="stmt"/>
-        <line num="194" count="2" type="stmt"/>
-        <line num="201" count="1" type="stmt"/>
-        <line num="220" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="78" count="0" type="cond" truecount="0" falsecount="8"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="84" count="2" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="144" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Utils">
+      <metrics statements="10" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="1"/>
+      <file name="getRandomMovieId.ts" path="/Users/marina/work/Movie-app/src/Utils/getRandomMovieId.ts">
+        <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="getReleaseDate.ts" path="/Users/marina/work/Movie-app/src/Utils/getReleaseDate.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
       </file>
     </package>
   </project>

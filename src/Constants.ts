@@ -8,4 +8,6 @@ export enum ImageSizes {
   original = "original",
 }
 
-export const ratingGrades = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+export const RATING_GRADES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+export const PAGINATION_LIMIT = 1000;

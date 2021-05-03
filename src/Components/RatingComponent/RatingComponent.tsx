@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./RatingComponent.scss";
 import SolidStar from "../../Assets/Icons/SolidStarIcon.svg";
 import RegularStar from "../../Assets/Icons/RegularStarIcon.svg";
-import { ratingGrades } from "../../Constants";
+import { RATING_GRADES } from "../../Constants";
 
 export interface IRatingProps {
   rating: number;
@@ -19,7 +19,7 @@ const RatingComponent: React.FC<IRatingProps> = ({ rating, onClick }) => {
 
   return (
     <div className="rating">
-      {ratingGrades.map((grade) => {
+      {RATING_GRADES.map((grade) => {
         const StarIcon = grade <= selectedGrade ? SolidStar : RegularStar;
         return (
           <div

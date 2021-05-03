@@ -9,5 +9,5 @@ export type TFormatMoviePosterUrl = (args: {
 export const formatMoviePosterUrl: TFormatMoviePosterUrl = ({
   size,
   imageUrl,
-  baseUrl = process.env.BASE_IMAGE_URL,
+  baseUrl = "https://image.tmdb.org/t/p/",
 }) => `${baseUrl}${size}${imageUrl}`;

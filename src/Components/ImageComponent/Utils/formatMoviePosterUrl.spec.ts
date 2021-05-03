@@ -8,11 +8,11 @@ describe("formatMoviePosterUrl", () => {
       imageUrl: "/fake-image.jpg",
     });
 
-    const expectedResult = "fake-base/w154/fake-image.jpg";
+    const expectedResult = "https://image.tmdb.org/t/p/w154/fake-image.jpg";
 
     expect(result).toEqual(expectedResult);
   });
-  it("should render formatMoviePosterUrl", () => {
+  it("should render formatMoviePosterUrl with baseUrl", () => {
     const result = formatMoviePosterUrl({
       size: ImageSizes.s,
       imageUrl: "/fake-image.jpg",
