@@ -8,7 +8,7 @@ export interface IRadioGroupProps {
   onChange: (event: string) => void;
 }
 
-type TItem = {
+export type TItem = {
   name: string;
   id: number;
 };
