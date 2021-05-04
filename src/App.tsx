@@ -1,5 +1,6 @@
 import React from "react";
 import HomePage from "./Pages/HomePage/HomePage";
+import DetailsPage from "./Pages/DetailsPage/DetailsPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 
@@ -11,6 +12,9 @@ const App: React.FC = () => (
       <Switch>
         <Route path="/" exact>
           <HomePage />
+        </Route>
+        <Route path="/details/:id">
+          <DetailsPage />
         </Route>
       </Switch>
     </Router>

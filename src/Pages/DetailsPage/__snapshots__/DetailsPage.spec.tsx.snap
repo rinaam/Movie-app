@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DetailsPage should render DetailsPage 1`] = `
-<p>
-  Hello from details page
-</p>
+<div
+  className="wrapper"
+>
+  <div>
+    Loading
+  </div>
+</div>
 `;

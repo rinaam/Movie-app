@@ -11,3 +11,8 @@ export enum ImageSizes {
 export const RATING_GRADES = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 export const PAGINATION_LIMIT = 1000;
+
+export const environmentVariables = {
+  apiKey: process.env.API_KEY,
+  baseUrl: process.env.BASE_URL,
+};

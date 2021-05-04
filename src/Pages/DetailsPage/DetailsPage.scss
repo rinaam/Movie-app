@@ -1,0 +1,27 @@
+@use "sass:map";
+@import "../../Styles//breakpoints.scss";
+@import "../../Styles/variables.scss";
+
+.details-header {
+  margin: map.get($spacing, "l") 0px;
+  display: flex;
+  :first-child {
+    margin-right: map.get($spacing, "xs");
+  }
+}
+.details-data {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: map.get($spacing, "xs");
+  @include breakpoint(smallDevices) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &-items {
+    width: 100%;
+    @include breakpoint(smallDevices) {
+      width: 50%;
+    }
+  }
+}

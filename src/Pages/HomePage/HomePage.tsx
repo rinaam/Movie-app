@@ -8,7 +8,7 @@ import RadioGroupComponent from "../../Components/RadioGroupComponent/RadioGroup
 import RandomIcon from "../../Assets/Icons/RandomIcon.svg";
 import MoviesList from "../../Containers/MoviesList/MoviesList";
 import { getRandomMovieId } from "../../Utils/getRandomMovieId";
-import { PAGINATION_LIMIT } from "../../Constants";
+import { PAGINATION_LIMIT, environmentVariables } from "../../Constants";
 import "./HomePage.scss";
 
 export interface IMovies {
@@ -49,7 +49,7 @@ type TGenre = {
 
 const HomePage: React.FC = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
-  const [selectedGenere, getSelectedGenre] = useState<number>(0);
+  const [selectedGenere, setSelectedGenre] = useState<number>(0);
   const [page, setPage] = useState<number>(1);
   const [movieList, setMovieList] = useState<TMovie[]>([]);
   const history = useHistory();
@@ -58,7 +58,7 @@ const HomePage: React.FC = () => {
     ["moviesCashKey", page],
     () =>
       fetch(
-        `https://api.themoviedb.org/3/movie/popular?api_key=ecf566898d809d66708ccd6a141a5147&page=${page}`
+        `https://api.themoviedb.org/3/movie/popular?api_key=${environmentVariables.apiKey}&page=${page}`
       ).then((res) => res.json()),
     { keepPreviousData: true, enabled: true }
   );
@@ -67,7 +67,18 @@ const HomePage: React.FC = () => {
     "genreCashKey",
     () =>
       fetch(
-        `https://api.themoviedb.org/3/genre/movie/list?api_key=ecf566898d809d66708ccd6a141a5147`
+        `https://api.themoviedb.org/3/genre/movie/list?api_key=${environmentVariables.apiKey}`
+      ).then((resp) => resp.json()),
+    {
+      enabled: true,
+    }
+  );
+
+  const randomMoviesByGenreResponse = useQuery<IMovies>(
+    ["randomMoviesByGenreCacheKey", selectedGenere],
+    () =>
+      fetch(
+        `https://api.themoviedb.org/3/discover/movie?api_key=${environmentVariables.apiKey}&with_genres=${selectedGenere}`
       ).then((resp) => resp.json()),
     {
       enabled: true,
@@ -82,8 +93,14 @@ const HomePage: React.FC = () => {
   }, [moviesResponse.data?.results]);
 
   const navigateToRandomMovie = (): void => {
-    const randomMovieId = getRandomMovieId(selectedGenere, movieList);
-    history.push(`/details/${randomMovieId}`);
+    if ((randomMoviesByGenreResponse.data?.results ?? []).length > 0) {
+      const randomMovieId = getRandomMovieId(
+        randomMoviesByGenreResponse.data?.results || []
+      );
+      if (randomMovieId) {
+        history.push(`/details/${randomMovieId}`);
+      }
+    }
   };
 
   return (
@@ -124,13 +141,17 @@ const HomePage: React.FC = () => {
                   groupName="Genre"
                   items={genresResponse.data?.genres ?? []}
                   title="Select genre:"
-                  onChange={getSelectedGenre}
+                  onChange={setSelectedGenre}
                 />
                 <ButtonComponent
                   variant="primary"
                   onClick={navigateToRandomMovie}
                 >
-                  Roll
+                  {randomMoviesByGenreResponse.isLoading ? (
+                    <>Loading...</>
+                  ) : (
+                    <>Roll</>
+                  )}
                 </ButtonComponent>
               </div>
             </ModalComponent>
