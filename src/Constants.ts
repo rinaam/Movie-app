@@ -14,5 +14,5 @@ export const PAGINATION_LIMIT = 1000;
 
 export const environmentVariables = {
   apiKey: process.env.API_KEY,
-  baseUrl: process.env.BASE_URL,
+  baseUrl: "https://image.tmdb.org/t/p/",
 };

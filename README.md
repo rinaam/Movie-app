@@ -1,5 +1,7 @@
 # Movie app
 
+- https://priceless-villani-6ab3f1.netlify.app
+
 ## Important
 
 For best results please match the versions
@@ -15,9 +17,7 @@ So to be able to run this app locally you need to add your own api_key.
 To do so create `.env` file in the root of the project and add this env variable there.
 
 ```javascript
-API_KEY=fakekey1234
-BASE_URL=https://image.tmdb.org/t/p/
-
+API_KEY = fakekey1234;
 ```
 
 To get the key, please follow these instructions [link](https://developers.themoviedb.org/3/getting-started/introduction)

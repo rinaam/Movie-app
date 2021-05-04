@@ -1,4 +1,4 @@
-import { ImageSizes } from "./../../../Constants";
+import { ImageSizes, environmentVariables } from "./../../../Constants";
 
 export type TFormatMoviePosterUrl = (args: {
   size: ImageSizes;
@@ -9,5 +9,5 @@ export type TFormatMoviePosterUrl = (args: {
 export const formatMoviePosterUrl: TFormatMoviePosterUrl = ({
   size,
   imageUrl,
-  baseUrl = "https://image.tmdb.org/t/p/",
+  baseUrl = environmentVariables.baseUrl,
 }) => `${baseUrl}${size}${imageUrl}`;
